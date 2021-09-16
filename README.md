@@ -1,2 +1,0 @@
-# nazareth
-Comic Nazareth
