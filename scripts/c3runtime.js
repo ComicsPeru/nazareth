@@ -3815,7 +3815,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Sin,
 		C3.Behaviors.Pin,
 		C3.Behaviors.Flash,
-		C3.Plugins.Browser.Acts.GoToURLWindow,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.NextPrevLayout,
 		C3.Plugins.System.Acts.SetLayerVisible,
@@ -3871,6 +3870,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Mouse.Cnds.IsOverObject,
 		C3.Plugins.Mouse.Acts.SetCursor,
 		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.Browser.Acts.GoToURLWindow,
 		C3.Plugins.Audio.Acts.Stop,
 		C3.Plugins.Audio.Cnds.OnEnded,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
@@ -4248,11 +4248,10 @@ function or(l, r)
 }
 
 self.C3_ExpressionFuncs = [
-		() => "",
-		() => "link",
 		() => "popup",
 		() => "fondo",
 		() => 0,
+		() => "",
 		() => "display",
 		() => "none",
 		() => -24,
@@ -4311,6 +4310,7 @@ self.C3_ExpressionFuncs = [
 		() => "NewWindow",
 		() => "https://twitter.com/intent/tweet?text=Espinar:%20El%20campo%20de%20concentraci%C3%B3n%20de%20los%20metales&url=https://convoca.pe/expediente-toxico-el-comic/espinar",
 		() => "https://convoca.pe/",
+		() => "link",
 		() => "dialogo",
 		() => -12,
 		p => {
