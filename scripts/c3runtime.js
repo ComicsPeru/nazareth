@@ -4089,6 +4089,7 @@ self.C3_JsPropNameTable = [
 	{play3: 0},
 	{TEXTO22: 0},
 	{TEXTO23: 0},
+	{BOCA15: 0},
 	{BORDE14: 0},
 	{BRAZO8: 0},
 	{BRAZO9: 0},
