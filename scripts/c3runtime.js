@@ -3884,12 +3884,12 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.Sprite.Acts.MoveToTop,
 		C3.Plugins.Sprite.Acts.SetAnim,
+		C3.Plugins.System.Cnds.Compare,
+		C3.Plugins.System.Exps.layoutname,
 		C3.Plugins.System.Cnds.ForEach,
 		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
 		C3.Plugins.Browser.Acts.ConsoleLog,
 		C3.Plugins.Sprite.Exps.IID,
-		C3.Plugins.System.Cnds.Compare,
-		C3.Plugins.System.Exps.layoutname,
 		C3.Plugins.Audio.Cnds.IsTagPlaying,
 		C3.Plugins.Touch.Cnds.OnTapGesture,
 		C3.Plugins.Browser.Acts.RequestFullScreen,
@@ -4396,18 +4396,19 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject();
 		},
-		() => 55,
+		() => 100,
 		() => 658,
 		() => "internas",
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0();
+		},
+		() => "Escena 00",
 		p => {
 			const n0 = p._GetNode(0);
 			return () => and("Alpha in", n0.ExpObject());
 		},
 		() => 3,
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0();
-		},
 		() => "Escena 01",
 		() => 40,
 		() => 360,
@@ -4416,7 +4417,7 @@ self.C3_ExpressionFuncs = [
 		() => 5,
 		() => 0.2,
 		() => "fondo",
-		() => -30,
+		() => -5,
 		() => "top.fnFullscreen()",
 		() => 280,
 		() => 200,
@@ -4436,7 +4437,6 @@ self.C3_ExpressionFuncs = [
 			return () => n0.ExpInstVar_Family();
 		},
 		() => 0.3,
-		() => 100,
 		() => "https://www.facebook.com/sharer.php?u=https://convoca.pe/expediente-toxico-el-comic/espinar",
 		() => "NewWindow",
 		() => "https://twitter.com/intent/tweet?text=Espinar:%20El%20campo%20de%20concentraci%C3%B3n%20de%20los%20metales&url=https://convoca.pe/expediente-toxico-el-comic/espinar",
