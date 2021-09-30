@@ -4380,6 +4380,7 @@ self.C3_ExpressionFuncs = [
 		() => "https://convoca.pe/expedientetoxico/nazareth/",
 		() => "externo",
 		() => "https://convoca.pe/expediente-toxico-el-comic",
+		() => "https://convoca.pe/agenda-propia/convocape-publica-comic-interactivo-con-la-historia-de-dos-ninos-que-recogieron",
 		() => "Video",
 		() => "https://www.youtube.com/embed/59zfxTuyQCw?autoplay=1",
 		() => 1,
@@ -4396,7 +4397,7 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject();
 		},
-		() => 100,
+		() => 1200,
 		() => 658,
 		() => "internas",
 		p => {
@@ -4437,6 +4438,7 @@ self.C3_ExpressionFuncs = [
 			return () => n0.ExpInstVar_Family();
 		},
 		() => 0.3,
+		() => 100,
 		() => "https://www.facebook.com/sharer.php?u=https://convoca.pe/expediente-toxico-el-comic/espinar",
 		() => "NewWindow",
 		() => "https://twitter.com/intent/tweet?text=Espinar:%20El%20campo%20de%20concentraci%C3%B3n%20de%20los%20metales&url=https://convoca.pe/expediente-toxico-el-comic/espinar",
