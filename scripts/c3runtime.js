@@ -4300,6 +4300,7 @@ self.C3_JsPropNameTable = [
 	{TEXTO43: 0},
 	{TEXTO44: 0},
 	{CREDITO: 0},
+	{Sprite4: 0},
 	{iframe: 0},
 	{logo2: 0},
 	{logo3: 0},
